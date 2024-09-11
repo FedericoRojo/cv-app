@@ -1,0 +1,91 @@
+.cv-container {
+    padding: 30px;
+    max-width: 800px; /* Increase width for more document-like feel */
+    margin: 50px auto;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc; /* Light border to mimic page outline */
+    border-radius: 0; /* Remove rounded corners for page effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd; /* Header underlining */
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+/* Contact, Education, and Work Information sections */
+.contact-info, .education-info, .work-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Entries in Work and Education sections */
+.work-entry, .education-entry {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.work-entry:last-child, .education-entry:last-child {
+    border-bottom: none; /* Remove border on last entry */
+}
+
+/* Buttons */
+.edit-button, .delete-button {
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 5px 8px;
+    margin-top: 5px;
+    background-color: #f44336; /* Red for visibility */
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        background: none;
+        box-shadow: none;
+    }
+
+    .cv-container {
+        border: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .edit-button, .delete-button {
+        display: none; /* Hide buttons during printing */
+    }
+}
